@@ -1,0 +1,35 @@
+﻿@charset "utf-8";
+* {margin:0; padding:0;}
+
+comu_wrap {width:996px; min-height:900px; text-align: center;background-color:white; margin-top:20PX;
+    margin-left: auto;
+    margin-right: auto;
+}
+.h_content{width:996px; height:900px; background-color:white; margin-top:50px; margin:0 auto; clear:both;}
+
+
+
+.h_txt{float:left; background-color:white;margin-top:20px; margin-left:90px;margin-bottom:20px; font-size:larger; font-weight:700; color:#269A62;
+    text-align: left;}
+#hwrite_table{width:800px; clear:both; margin:auto auto;  background-color:white;  border-style:none; text-align:center; }
+#hButton1 {width:200px; height:30px;}
+.htr{height:50px; width:60px; background-color:white; border:1px solid #269A62; border-collapse:collapse;}
+.htr2{height:300px; width:60px; background-color:white; border:1px solid #269A62; border-collapse:collapse;}
+.htd{ width:700px; height:50px; float:left; border-style:none;text-align:left; vertical-align:top;}
+.htit{height:30px; width:100px; background-color :white; border:1px solid #269A62; border-collapse:collapse;text-align:left;vertical-align:central;}
+.htit2{height:100px; width:300px; background-color :white; border-style:none;text-align:left;border:1px solid #269A62;vertical-align:central;}
+.htd{width:700px; height:50px; float:left; border-style:none;text-align:left;vertical-align:top;}
+.htd2{width:700px; height:300px; float:left; border-style:none;text-align:left;vertical-align:central;}
+#txt {width:800px; clear:both; margin:auto auto; text-align:center; font-size:smaller; margin-top:20px}
+.hwrite_btn {float:left; margin-left:90px; margin-bottom:50px; margin-top:50px;}
+.hwrite_btn2  {float:right; padding-left:70px;  margin-right:60px; margin-bottom:50px; margin-top:50px;
+    width: 220px;
+}
+.hwrite_line {width:800px; margin:auto; margin-top:20px;}
+
+.h_lbl {width:220px; margin:auto;}
+
+
+#hcancel_btn { border:1px solid #808080; background-color:white; width:60px; height:25px;}
+#hnext_btm { background-color:#fc4b4b; color:white; border:1px solid #fc4b4b; margin-left:10px;  width:60px; height:25px;}
+#fileup {width:400px; height:30px;}

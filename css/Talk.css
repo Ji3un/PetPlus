@@ -1,0 +1,27 @@
+﻿/*content*/
+
+.TalkWrap {width:996px; min-height:1300px; margin:0 auto; clear:both;}
+.Talk_Con{width:996px; height:1400px; margin:0 auto;}
+.comu_wrap {width:996px; min-height:900px; text-align: center;background-color:white; margin-top:20PX;
+    margin-left: auto;
+    margin-right: auto;
+}
+.whirt_txt {float:left; background-color:white;margin-top:20px; margin-left:90px;margin-bottom:20px; font-size:larger; font-weight:700; color:#269A62
+}
+#comu2_line {float:left; border:1px solid #ff6a00; margin-bottom:10px; margin-top:10px;}
+#twrite_table {height:200px; clear:both; margin:auto auto;  background-color:white;  border-style:none;}
+.ttr {height:30px; width:60px; background-color:white; border-style:none;}
+.ttd { width:700px; height:30px; border-style:none; margin-top:15px; text-align:left;}
+.ttit {height:30px; width:100px; background-color :white; border-style:none;text-align:left;}
+.twrite{float:left; width:123px; margin:auto auto; text-align:left;}
+#title { width:996px;}
+#imgupload {border:none;}
+#twirte_textbox {clear:both; margin:auto auto; margin-bottom:40px; border:1px solid #ececec}
+#txt {width:800px; clear:both; margin:auto auto; text-align:center; font-size:smaller; margin-top:20px}
+.twrite_btn {float:left; margin-left:90px; margin-bottom:50px; margin-top:50px;}
+.twrite_btn2 {float:right; margin-right:90px; margin-bottom:50px; margin-top:50px;}
+.twrite_line {width:800px; margin:auto; margin-top:20px;}
+#tlist_btn {  border:1px solid #808080; background-color:white; width:60px; height:25px;}
+#tnext_btm { background-color:#fc4b4b; color:white; border:1px solid #fc4b4b; margin-left:10px;  width:60px; height:25px;}
+#tcancel_btn { border:1px solid #808080; background-color:white; width:60px; height:25px;}
+#fileup {width:400px; height:30px;}

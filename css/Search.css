@@ -1,0 +1,108 @@
+﻿@charset "utf-8";
+
+* {margin:0; padding:0;}
+a {text-decoration:none; color:black;}
+/* 전체 페이지를 감싸는 영역 */
+.wrap {margin:0; padding:0; overflow:hidden;}
+/* 페이지의 header 영역 */
+.header {width:100%; height:42px; margin:14px 0;}
+.logo {width:196px; height:42px; float:left;}
+.logo img {width:196px; margin-left:10px;}
+.logo a {text-decoration:none; color:white;}
+.search {width:340px; height:42px; float:left; background-color:#11a35d; margin-left:50px; padding-left:20px; margin-top:3px;}
+#stxt {width:300px; height: 34px; float:left; margin:4px 0px 3px -16px; border:none; padding-left:3px;}
+.search button {background:url('/Images/search_icon.png') no-repeat center; width:33px; height:35px; margin:3px 5px 2px 7px; border:none; }
+/* Header 안에 우측 상단에 위치한 nav(메뉴바) 영역 */
+.top_nav{width:300px; height :42px; float:right;  padding-left:-80px; margin-top:15px }
+.top_nav { font-size:0.813em; font-weight:bold;}
+.nt_line {border: 1px solid #ececec; margin-top:2px;}
+.nf_line {border:1px solid #11a35d;}
+.nf2_line {border:1px solid #cbcbcb;}
+.top_nav ul {list-style-type:none; width:310px; height:36px; }
+.top_nav ul li {float:left;}
+.top_nav  ul li:first-child {width:60px; height:35px;  }
+.top_nav  ul li a {width:60px; height:35px; text-align:center; display:block; line-height:35px;}
+.top_nav  ul li a:hover {color:#11a35d; font-weight:bold;}
+
+/* contents - 컨텐츠 영역 */
+.content_wrap{width:100%; float:left;}
+.contents{width:80%; height:715px; float:left; }
+.side_menu {width:20%; height:715px;float:left; z-index:100; background-color:#11a35d;}
+
+/*메뉴영역*/
+.map_nav{width:100%; height:40px; float:left; background-color:#ececec;}
+#DropDownList1 {width:100px; margin:10px;}
+
+
+
+
+/* footer 영역*/
+
+.footer {width:100%; height:120px;  font-size:0.813em; margin-left:10px; clear:both;}
+.f_notice {width:100%; height:20px; padding-top:8px; clear:both;}
+.f_title {font-weight:bold; margin-left:5px;}
+.footer a:hover {color:#808080; text-decoration:solid;}
+.view_all {float:right;  font-weight:bold; font-size:0.813em;}
+.f_advert {width:100%; height:50px;}
+.footer_txt {width:100%; height:90px; font-size:0.813em; color:#5c5c5c;clear:both;}
+.footer_txt ul {list-style-type:none; width:400px; float:left; margin-left:35px; margin-top:31px;}
+.footer_txt ul li {float:left;}
+.footer_txt ul li a {width:60px; height:13px; text-align:center; display:block;}
+.footer_txt img {width:169px; float:left; margin-top:31px;}
+.f_txt {float:left; width:600px; margin-top:10px; margin-left:46px;}
+.txt_wrap {width:600px; float:left;}
+
+
+/*google API*/
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #places {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+      }
+      #places li {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      #places li h3 {
+        color:#11a35d;
+      }
+      #places li:nth-child(odd) {
+        background-color: #fcfcfc;
+      }
+      #places li:hover{
+        background-color:#0d693d;
+        color:white;        
+        font-weight:bold;
+      } 
+      #places li:hover h3{
+        color:white;       
+      }   
+
+      #more {
+        width: 100%;
+        height:7%;
+        margin:0;
+        background-color:#11a35d;
+        color:white;
+        border: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
