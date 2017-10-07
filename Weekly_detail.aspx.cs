@@ -33,11 +33,14 @@ public partial class Weekly_detail : System.Web.UI.Page
 
             //실행
             con.Open();
-            cmd.ExecuteNonQuery();
+            SqlDataReader rd = cmd.ExecuteReader();
+            if (rd.Read())
+            {
+                reclabel.Text = rd["rec"].ToString();
+            }
+            rd.Close();
             con.Close();
-        }
-        rec_btn.ImageUrl = "~/images/b_heart.png";
-        
+         }
     }
     protected void weeklytxt_form_DataBound(object sender, EventArgs e)
     {
@@ -71,7 +74,6 @@ public partial class Weekly_detail : System.Web.UI.Page
         string sql = @"select * from weekly where seq = @seq";
         SqlCommand cmd = new SqlCommand(sql, con);
         cmd.Parameters.AddWithValue("@seq", seq);
-
 
         //실행
         con.Open();

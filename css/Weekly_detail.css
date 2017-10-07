@@ -9,7 +9,7 @@
 .wtit_tr {border-style:none;height:40px;}
 .wtit_td {border-style:none; float:left; height:40px;}
 .user_td {width:70px;}
-, user_td p {float:left;}
+.user_td p {float:left;}
 .hittxt_td {width:35px;}
 .hit_td {width:15px;}
 .wdate_td {width:700px}
@@ -23,8 +23,17 @@
 
 
 
-
+.TTalk_bwrap {background-color:#ffffff;}
+.TTalk_wrap {width:996px; min-height:900px; margin:0 auto; clear:both; margin-bottom:30px;}
 .rec_btndiv {margin:auto auto;
     text-align: center;
 }
 #rec_btn {margin:0 auto;}
+.Tl_btn {float:left;}
+.Tr_btn {float:right;}
+.Tcomment {background-color:#ececec;}
+#tcomtext {margin-left:20px; margin-top:20px; margin-bottom:20px;}
+#tcombtn {margin-bottom:20px;}
+.tcom_debtn {float:right;}
+.tcom_con {float:left;}
+.tcomhr {margin-top:20px; margin-bottom:20px;}
