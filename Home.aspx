@@ -1,7 +1,8 @@
 ﻿
 <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_main.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">    
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link rel="stylesheet" type="text/css" href="/css/Main.css"/>    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="advert_wrap">
@@ -40,71 +41,48 @@
             <div class="tabmenu">  
                     <ul class="menu1">
                         <li>주간펫+</li>
-                        <li><span onclick="ShowTab1('0')" style="cursor: pointer;">의학</span></li>
-                        <li><span onclick="ShowTab1('1')" style="cursor: pointer;">생활</span></li>    
+                        <li><asp:Button ID="Button6" runat="server" Text="의학" BackColor="#FFFFFF" BorderStyle="None" Font-Bold="True" OnClick="Button6_Click" /></li>
+                        <li><asp:Button ID="Button7" runat="server" Text="생활" BackColor="#FFFFFF" BorderStyle="None" Font-Bold="True" OnClick="Button7_Click" style="height: 17px" /></li>    
                     </ul>
             </div>
             <div class="tab_content">
                  <div id="tab_0" style="width: 100%; margin-top:10px; display: block;">
-                     <a href="Weekly.aspx">
+                     <a id="wcon1" runat="server">
                          <div class="w_con_1" >
-                             <asp:Image ID="Image2" runat="server" ImageUrl="Images/w_con_1.png" />
+                             <asp:Image ID="Image2" runat="server"  />
                              <div class="w_title">
-                                 <p class="s_txt">우리집사님건강괜찮을까?</p>
-                                 <p class="title_1">고양이 건강 주의보 TOP10</p>
+                                 <p class="title_1">
+                                     <asp:Label ID="Label2" runat="server" ></asp:Label></p>
                              </div>
                          </div>
                      </a>
-
                      <div class="wconwrap">
-                     <a href="Weekly.aspx"><div class="w_con_wrap">
-                         <div class="w_con_2">
-                             <asp:Image ID="Image3" runat="server" ImageUrl="Images/w_con_2.png"/>                                
-                         </div>
-                         <p class="w_title_2">강아지 출산과 관련정보 TOP10</p>
-                     </div></a>
-
-                     <a href="Weekly.aspx">
-                         <div class="w_con_wrap_1">
-                         <div class="w_con_3">
-                             <asp:Image ID="Image1" runat="server" ImageUrl="Images/w_con_3.png" />
-                             <!--<img src="Images/w_con_3.png" />         -->                       
-                         </div>
-                         <p class="w_title_3">반려동물 좋은 병원 고르는 방법</p>  
+                        <asp:DataList ID="DataList2" runat="server" DataKeyField="seq" RepeatColumns="3" CssClass="DataLIst_wrap2" EditItemStyle-Wrap="False">
+                         <AlternatingItemStyle BorderStyle="None" />  
+                         <EditItemStyle Wrap="False" BorderStyle="None"></EditItemStyle>
+                         <ItemStyle BorderStyle="None" CssClass="ditem" />
+                         <ItemTemplate>
+                          <div class="main_wrap" style="margin: 0 11px; border:none;">
+                            <a href="Weekly_detail.aspx?seq=<%#Eval("seq")%>">
+                                 <div id="main_image" >
+                                     <asp:Image ID="Image1" runat="server" Height="170px" Width="226px"  ImageUrl='<%# "~/Weekly/" + Eval("fName") %>' />
+                                 </div>
+                             </a>
+                             <a href="Weekly_detail.aspx?seq=<%#Eval("seq")%>">
+                                 <asp:Label ID="title1Label" runat="server" style="font-size: 12pt;  margin:15px 0;" Text='<%# Eval("title") %>' />
+                             </a>
+                             <br />
+                            </div>
+                         </ItemTemplate>
+                         <SeparatorStyle BorderStyle="None" />
+                     </asp:DataList>                         
+                     <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>"
+                         SelectCommand="select w.seq,title,hit,fname from Weekly w join pfile p on w.seq = p.tseq where p.seq in (select min(seq) from pfile group by tseq) and category = '예방' order by hit desc;"></asp:SqlDataSource>
+                     <asp:SqlDataSource ID="SqlDataSource8" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>" 
+                         SelectCommand="select w.seq,title,hit,fname from Weekly w join pfile p on w.seq = p.tseq where p.seq in (select min(seq) from pfile group by tseq) and category = '뷰티' order by hit desc;"></asp:SqlDataSource>
                     </div>
-                     </a>
-                          <a href="Weekly.aspx">
-                         <div class="w_con_wrap_2">
-                         <div class="w_con_3">
-                             <asp:Image ID="Image5" runat="server" ImageUrl="Images/w_con_3.png" />
-                             <!--<img src="Images/w_con_3.png" />         -->                       
-                         </div>
-                         <p class="w_title_3">반려동물 좋은 병원 고르는 방법</p>  
-                    </div>
-                     </a>
-                         </div>
                  </div>
-                 <div id="tab_1" style="width: 100%; display: none;">
-                    <a href="Weekly.aspx"><div class="w_con_1">
-                     <img src="Images/w_con_4.png" />
-                     <div class="w_title">
-                         <p class="s_txt">반려동물 들이 친구들과 친하게 지낼 수 있을까?</p>
-                         <p class="title_1">올바른 개 친구 사귀는 법</p>
-                     </div>
-                 </div></a>
-                    <a href="Weekly.aspx"><div class="w_con_wrap">
-                     <div class="w_con_2">
-                         <img src="Images/w_con_5.png" />                                
-                     </div>
-                     <p class="w_title_2">햄스터 배변통 악취 없애는 법</p>
-                 </div></a>
-                    <a href="Weekly.aspx"><div class="w_con_wrap_1">
-                     <div class="w_con_3">
-                         <img src="Images/w_con_6.png" />                                
-                     </div>
-                     <p class="w_title_3">반려동물별 사료 추천 BEST3</p>  
-                </div></a>
-                 </div> 
+                  
             </div>
         </div>
         <!--weekly end--> 
@@ -114,118 +92,50 @@
          <div class="Hotdeal">	
             <div class="tabmenu">  
                     <ul class="menu2">
-                        <li>핫딜</li>
-                        <li><span onclick="ShowTab('2')" style="cursor: pointer;">진료비</span></li>
-                        <li><span onclick="ShowTab('3')" style="cursor: pointer;">용품</span></li>
-                        <li><span onclick="ShowTab('4')" style="cursor: pointer;">미용</span></li>
-                        <li><span onclick="ShowTab('5')" style="cursor: pointer;">호텔</span></li>       
+                        <li><asp:Button ID="Button1" runat="server" Text="핫딜" BackColor="#DEDCDC" BorderStyle="None" Font-Bold="True" OnClick="Button1_Click" /></li>
+                        <li><asp:Button ID="Button2" runat="server" Text="진료비" BackColor="#FFFFFF" BorderStyle="None" Font-Bold="True" OnClick="Button2_Click" /></li>
+                        <li><asp:Button ID="Button3" runat="server" Text="용품" BackColor="#FFFFFF" BorderStyle="None" Font-Bold="True" OnClick="Button3_Click" /></li>
+                        <li><asp:Button ID="Button4" runat="server" Text="미용" BackColor="#FFFFFF" BorderStyle="None" Font-Bold="True" OnClick="Button4_Click" /></li>
+                        <li><asp:Button ID="Button5" runat="server" Text="호텔" BackColor="#FFFFFF" BorderStyle="None" Font-Bold="True" OnClick="Button5_Click" /></li>       
                     </ul>
             </div>
             <div class="tab_content">
-                <div id="tab_2" style="width: 100%; display: block;">
-                     <a href="Event.aspx"><div class="h_con_wrap">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_1.png" />                                
-                         </div>
-                         <p class="h_title_2">강아지 습진, 물집 발 치료</p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_2.png" />                                
-                         </div>
-                         <p class="h_title_2">관악구 고슴도치 치료전문</p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_3.png" />                                
-                         </div>
-                         <p class="h_title_2">강남 중성화 예약 10% 할인</p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_4.png" />                                
-                         </div>
-                         <p class="h_title_2">2개월 미만 무료 검진</p>
-                     </div></a>
+                <div class="tab_content">
+                 <div id="tab_2" style="width: 100%;"">
+                     <asp:DataList ID="DataList1" runat="server" DataKeyField="seq" RepeatColumns="4" style="margin-right: 2px; " CssClass="DataLIst_wrap" EditItemStyle-Wrap="False">
+                         <AlternatingItemStyle BorderStyle="None" />                            
+                         <ItemStyle BorderStyle="None" CssClass="ditem" />
+                         <ItemTemplate>
+                          <div class="main_wrap" style="margin: 0 14px; border:none;">
+                            <a href="hot_detail.aspx?seq=<%#Eval("seq")%>">
+                                 <div id="main_image">
+                                     <asp:Image ID="Image1" runat="server" Height="170px" Width="220px"  ImageUrl='<%# "~/Event/" + Eval("fName") %>' />
+                                 </div>
+                             </a>
+                             <a href="hot_detail.aspx?seq=<%#Eval("seq")%>">
+                                 <asp:Label ID="title1Label" runat="server" style="font-size: 12pt;  margin:15px 0;" Text='<%# Eval("title1") %>' />
+                             </a>
+                             <br />
+                            </div>
+                         </ItemTemplate>
+                         <SelectedItemStyle BorderStyle="None" />
+                     </asp:DataList>                    
+                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>"
+                         SelectCommand="select * from Hotdeal h join pfile p on h.seq = p.tseq where p.seq in (select min(seq) from pfile group by tseq) order by hit desc;"></asp:SqlDataSource>
+                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>"
+                         SelectCommand="SELECT * FROM [Hotdeal] join [pfile] on Hotdeal.seq = pfile.tseq where Hotdeal.category='진료비';"></asp:SqlDataSource>
+                     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>" 
+                         SelectCommand="SELECT * FROM [Hotdeal] join [pfile] on Hotdeal.seq = pfile.tseq where category='미용';"></asp:SqlDataSource>
+                     <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>" 
+                         SelectCommand="SELECT * FROM [Hotdeal] join [pfile] on Hotdeal.seq = pfile.tseq where category='용품';"></asp:SqlDataSource>
+                     <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>" 
+                         SelectCommand="SELECT * FROM [Hotdeal] join [pfile] on Hotdeal.seq = pfile.tseq where category='호텔';"></asp:SqlDataSource>
+                    
                  </div>
-                <div id="tab_3" style="width: 100%; display: none;">
-                     <a href="Event.aspx"><div class="h_con_wrap">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_5.png" />                                
-                         </div>
-                         <p class="h_title_2">촬영모델시 무료파마</p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_6.png" />                                
-                         </div>
-                         <p class="h_title_2">유아견 상담시 발톱손질 무료</p>
-                     </div><//a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_7.png" />                                
-                         </div>
-                         <p class="h_title_2">애견목욕 2만원</p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_8.png" />                                
-                         </div>
-                         <p class="h_title_2">마리 당 10%씩 추가 할인</p>
-                     </div></a>
-                 </div>
-                <div id="tab_4" style="width: 100%; display: none;">
-                     <a href="Event.aspx"><div class="h_con_wrap">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_9.png" />                                
-                         </div>
-                         <p class="h_title_2">톱밥 5kg 구매시 + 2kg</p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_10.png" />                                
-                         </div>
-                         <p class="h_title_2">다이어트간식 10% 쿠폰 </p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_11.png" />                                
-                         </div>
-                         <p class="h_title_2">겨울 강아지옷 20% 쿠폰</p>
-                     </div></a>
-                     <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_12.png" />                                
-                         </div>
-                         <p class="h_title_2">고양이 돌돌이 1+1</p>
-                     </div></a>
-                 </div>
-                <div id="tab_5" style="width: 100%; display: none;">
-                    <a href="Event.aspx"><div class="h_con_wrap">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_13.png" />                                
-                         </div>
-                         <p class="h_title_2">초호화 애견호텔 명절할인</p>
-                     </div></a>
-                    <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_14.png" />                                
-                         </div>
-                         <p class="h_title_2">강남구 호텔 두당 5%할인</p>
-                     </div></a>
-                    <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_15.png" />                                
-                         </div>
-                         <p class="h_title_2">고양이 예약시 + 간식증정</p>
-                     </div></a>
-                    <a href="Event.aspx"><div class="h_con_wrap_1">
-                         <div class="h_con_2">
-                             <img src="Images/h_con_16.png" />                                
-                         </div>
-                         <p class="h_title_2">어플 예약시 8박 + 2박</p>
-                     </div></a>
-                 </div> 
+            </div>
+                
+                
+                 
             </div>
         </div>
         <!--hotdeal end--> 

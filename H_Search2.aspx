@@ -17,8 +17,10 @@
         var infowindow;
         var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         var labelIndex = 0;
+       
 
         function initMap() {
+
             var pyrmont = { lat: 37.584915, lng: 126.965335 };
 
             map = new google.maps.Map(document.getElementById('map'), {
@@ -107,18 +109,16 @@
             </div>
         </div>
         <hr class="nf_line" style="width:100%;"/>
-        <div class="content_wrap">
-            <div class="map_nav">
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True"> </asp:DropDownList>
-            </div>
-            <hr class="nf2_line" />
+        <div class="content_wrap">     
             <div class="contents">                       
                <div id="map"></div>
                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwUV_kvT2lAnpSQgmOaTmZ21-geKG2OQw&libraries=places&callback=initMap" async defer></script>                  
             </div>
             <div class="side_menu">
+                <div></div>
+                <button id="more"> 더 찾아보기</button>
                 <ul id="places">
-                    <button id="more"> 더 찾아보기</button>
+                    
                 </ul>
             </div>
             </div> 

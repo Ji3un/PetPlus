@@ -22,14 +22,14 @@ public partial class Weekly : System.Web.UI.Page
         SqlConnection con = new SqlConnection(conStr);
 
         //명령
-        string sql = "select top 1 seq from weekly order by hit desc";
+        string sql = "select top 1 w.seq from Weekly w join pfile p on w.seq = p.tseq where p.seq in (select min(seq) from pfile group by tseq) order by hit desc;";
         SqlCommand cmd = new SqlCommand(sql, con);
 
         con.Open();
         int a = (int)(cmd.ExecuteScalar());
         con.Close();
         Label2.Text = a.ToString();
-        string sql2 = "select fname from pfile where tseq = " + a;
+        string sql2 = "select fname from pfile where tseq = " + a +",tname= 'H'";
         SqlCommand cmd2 = new SqlCommand(sql2, con);
 
         con.Open();
@@ -39,18 +39,5 @@ public partial class Weekly : System.Web.UI.Page
         Label2.Text += "," + fname;
 
         //Image1.ImageUrl = "~/photos/weekly1.png";
-        Image2.ImageUrl = "~/photos/week1.jpg";
-        Image3.ImageUrl = "~/photos/week2.jpg";
-        Image4.ImageUrl = "~/photos/week3.jpg";
-        Image5.ImageUrl = "~/photos/week4.jpg";
-        Image6.ImageUrl = "~/photos/week5.jpg";
-        Image7.ImageUrl = "~/photos/week6.jpg";
-        Image8.ImageUrl = "~/photos/week7.jpg";
-        Image9.ImageUrl = "~/photos/week8.jpg";
-        Image10.ImageUrl = "~/photos/week9.jpg";
-        Image11.ImageUrl = "~/photos/week10.jpg";
-        Image12.ImageUrl = "~/photos/week11.jpg";
-        Image13.ImageUrl = "~/photos/week12.jpg";
-        Image14.ImageUrl = "~/photos/week1.jpg";
     }
 }
