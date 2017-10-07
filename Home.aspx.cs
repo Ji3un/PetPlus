@@ -17,6 +17,7 @@ public partial class Home : System.Web.UI.Page
 
         string conStr = ConfigurationManager.ConnectionStrings["myDB"].ConnectionString;
         SqlConnection con = new SqlConnection(conStr);
+        DataList1.DataSourceID = "SqlDataSource1";
         
     }
     protected void beauty_btn_ServerClick(object sender, EventArgs e)
@@ -50,5 +51,25 @@ public partial class Home : System.Web.UI.Page
     protected void pregnancy_btn_ServerClick(object sender, EventArgs e)
     {
 
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        DataList1.DataSourceID = "SqlDataSource2";
+    }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        DataList1.DataSourceID = "SqlDataSource3";
+    }
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        DataList1.DataSourceID = "SqlDataSource4";
+    }
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        DataList1.DataSourceID = "SqlDataSource5";
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        DataList1.DataSourceID = "SqlDataSource1";
     }
 }
