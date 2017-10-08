@@ -1,0 +1,31 @@
+﻿.TalkWrap {width:996px; min-height:1300px; margin:0 auto; clear:both;}
+.Talk_Con{width:996px; height:1400px; margin:0 auto;}
+.comu_wrap {width:996px; min-height:900px; text-align: center;background-color:white; margin-top:20PX;
+    margin-left: auto;
+    margin-right: auto;
+}
+.whirt_txt {float:left; background-color:white;margin-top:20px; margin-left:90px;margin-bottom:20px; font-size:larger; font-weight:700; color:#269A62;
+    text-align: left;
+}
+#wButton1 {width:200px; height:30px;}
+#comu2_line {float:left; border:1px solid #ff6a00; margin-bottom:10px; margin-top:10px;}
+#pwrite_table {width:800px; clear:both; margin:auto auto;  background-color:white;  border-style:none; text-align:center; }
+.ptr {height:50px; width:60px; background-color:white; border:1px solid #269A62; border-collapse:collapse;}
+.ptr2 {height:300px; width:60px; background-color:white; border:1px solid #269A62; border-collapse:collapse;}
+.ptd { width:700px; height:50px; float:left; border-style:none;text-align:left;vertical-align:top;}
+.ptit2 {height:100px; width:300px; background-color :white; border-style:none;text-align:left;vertical-align:central;}
+.ptd2 { width:700px; height:300px; float:left; border-style:none;text-align:left;vertical-align:central;}
+.ptit {height:30px; width:100px; background-color :white; border:1px solid #269A62; border-collapse:collapse;text-align:left;vertical-align:central;}
+.ptit2 {height:30px; width:100px; background-color :white; border:1px solid #269A62; border-collapse:collapse;text-align:left;vertical-align:central;}
+.pwrite{float:left; width:123px; margin:auto auto; text-align:left;}
+#title { width:996px;}
+#imgupload {border:none;}
+#twirte_textbox {clear:both; margin:auto auto; margin-bottom:40px; border:1px solid #ececec}
+#txt {width:800px; clear:both; margin:auto auto; text-align:center; font-size:smaller; margin-top:20px}
+.pwrite_btn {float:left; margin-left:90px; margin-bottom:50px; margin-top:50px;}
+.pwrite_btn2 {float:right; margin-right:90px; margin-bottom:50px; margin-top:50px;}
+.pwrite_line {width:800px; margin:auto; margin-top:20px;}
+#plist_btn {  border:1px solid #808080; background-color:white; width:60px; height:25px;}
+#pnext_btm { background-color:#fc4b4b; color:white; border:1px solid #fc4b4b; margin-left:10px;  width:60px; height:25px;}
+#pcancel_btn { border:1px solid #808080; background-color:white; width:60px; height:25px;}
+#fileup {width:400px; height:30px;}

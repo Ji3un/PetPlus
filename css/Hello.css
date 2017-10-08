@@ -1,0 +1,9 @@
+﻿@charset "utf-8";
+* {margin:0; padding:0;}
+
+/* 메시지 출력 결과 영역 */
+.m_check_logo{width:210px;padding-top:110px; margin-left:150px;
+    height: 70px;
+}
+.m_result{width:300px; height: 250px; margin-left:170px; }
+.event_logo{width:400px; height:300px; float:right; padding-top:70px;padding-right:120px;}

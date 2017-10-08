@@ -1,0 +1,126 @@
+﻿/*header,footer*/
+
+.header {width:800px; height:150px; margin:0 auto;background:white; }
+.logo {width:308px; height:80px; margin:0 auto; padding:40px 0; background:white; background:url('../Images/mainlogo2.png') no-repeat center;  }
+.logo a {text-decoration:none; color:white;}
+.nt_line {width:800PX; border: 1px solid #ececec;}
+.footer { width:800px; height:180px; margin:0 auto; font-size:0.813em; background-color:white;}
+.f_notice {width:800px; height:20px; margin:0 auto; padding-top:8px;}
+.f_title {font-weight:bold; margin-left:5px;}
+.footer a:hover {color:#808080; text-decoration:solid;}
+.view_all {float:right;  font-weight:bold; font-size:0.813em; margin-right:5px;}
+.f_advert {width:800px; height:50px;}
+.footer_txt {width:789px;height:90px; font-size:0.813em; color:#5c5c5c; margin-left:10px;background-color:white;}
+.footer_txt ul {list-style-type:none; width:378px;float:left;  margin-top:31px;}
+.footer_txt ul li {float:left;}
+.footer_txt ul li a {width:88px;height:22px;text-align:center; display:block;}
+.footer_txt img {width:169px; float:left; margin-top:31px; background-color:white;}
+.f_txt {float:left; width:606px;margin-top:10px; margin-left:10px;background-color:white;}
+.f_hr {width: 800px; border: 1px solid #ececec; }
+
+/*회원가입css*/
+* {padding:0; background-color:#ececec;margin-left: 0;margin-right: 0;margin-bottom: 0px;}
+a {text-decoration:none; color:black;background:white;}
+ul {background:white;}
+.wrap {width:800px;height:100%; margin:0 auto; padding:0; background-color:white;}
+.article {background-color:white;}
+.tabmenu_1 {width:996px; margin:0 auto; background-color:white }
+.tabmenu_2 {width:996px; margin:0 auto; background-color:white;border-top:solid 2px #116a28; font-weight:600; color:#116a28 }
+.tabmenu_3 {width:996px; margin:0 auto; background-color:white }
+.tab {float:right; margin-top:20px;margin-right:40px;width: 259px; background-color:white;}
+.j_hr {width:720PX; border: 1px solid #ececec; margin:auto;}
+.title {margin-left:40px; margin-bottom:20px;background-color:white; }
+.tit_join {background-color:white;}
+.tit_txt {font-size:0.750em;background-color:white;}
+/*테이블 text스타일부분*/
+.br {height:30px; background-color:white}.br td {background-color:white}
+.join_table {clear:both; margin:auto auto; margin-top:45px; margin-bottom:45px; width:612px; background-color:white;}
+.id_textstyle {width:200px;  background-color:white; }
+.pwd_textstyle{width:200px; height:70px; background-color:white;}
+.pwdch_textstyle{width:200px; height:30px; background-color:white;}
+.name_textstyle{width:200px;height:30px; background-color:white;  }
+.rnumber_textstyle{width:200px; height:30px; background-color:white; }
+.pnumber_textstyle{width:200px; height:30px; background-color:white; }
+.email_textstyle{width:200px; height:30px; background-color:white; }
+.agree_style{width:200px; height:30px; background-color:white;}
+.animal_textstyle{width:180px;height:30px;background-color:white;}
+/*테이블 input스타일부분*/
+.id_inputstyle {height:30px;background-color:white;}
+.pwd_inputstyle{background-color:white; }
+.pwdch_inputstyle{height:30px;background-color:white;}
+.name_inputstyle{height:30px;background-color:white; }
+.rnumber_inputstyle{height:30px;background-color:white; }
+.pnumber_inputstyle{background-color:white;height:30px; }
+.email_inputstyle{height:30px;background-color:white; }
+.agree_inputstyle{height:30px;background-color:white; padding-top:10px; }
+.animal_inputstyle{height:30px;background-color:white; }
+
+.id_table {margin:0 auto;}
+.pwd_table {margin:0 auto}
+.choice {background-color:white; float:left;}
+
+/*input부분*/
+#TextBox1 {float:left; border:1px solid #b4b4b4; 
+font-size:1em; background:white;
+}
+#overlap {
+    border-style: solid;
+    border-color: #116a28;
+    border-width: 1px;
+    background-color: #11a35d;
+    color: white;
+    float:left;
+}
+
+#pwd_input {float:left; border:1px solid #b4b4b4; 
+font-size:1em; background:white;
+}
+#RequiredFieldValidator1 {float:left;}
+#RequiredFieldValidator2 {float:left;}
+#pwdcheck_input {border-left: 1px solid #b4b4b4;
+    border-right: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+    float:left; font-size:1em; background:white;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: 0px;
+}
+#name_input {width:405px; height:30px;float:left; border:solid 1px; border-color:#b4b4b4; font-size:1em; background:white;}
+#rnumber_input {float:left; border:1px solid #b4b4b4;font-size:1em; background:white; margin-right:5px;
+}
+#ㅡ {width:10px; height:30px;float:left; margin:0 auto;margin-right:5px; background-color:white;}
+
+#gender_input {    float: left;
+    border: 1px solid #b4b4b4;
+    font-size: 1em;
+    background: white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#Label2 {float:left;background-color:white;}
+#Label3 {float:left;background-color:white;} 
+#Label4 {float:left;background-color:white;} 
+#f_rnumber {width:180px;height:30px; float:left; margin:0 auto; background-color:white;}
+
+#phon_select {height:31px;width:95px; border:1px solid #b4b4b4; background-color:white; float:left;background-color:white; text-align:center;}
+#pnumber_input {float:left; border:1px solid #b4b4b4;font-size:1em; background:white; height:30px;
+}
+#ger_input {width:45px;height:30px;float:left; border:1px solid #b4b4b4;font-size:1em; background:white;}
+#email_input {float:left; border:1px solid #b4b4b4;font-size:1em; background:white;margin-right:15px;
+}
+#atmark {width:10px; height:30px;float:left; margin:auto auto; margin-top:5px; background-color:white;}
+#email_select {height:31px;width:120px; border:1px solid #b4b4b4; background-color:white; float:left; margin-left:15px; background-color:white;}
+#CheckBox1 {float:left; font-size:0.8em; background-color:white; }
+#CheckBox2 {float:left; font-size:0.8em; background-color:white;}
+#CheckBoxList2 {background-color:white;}
+#RadioButtonList1 {background-color:white; text-decoration-color:white;}
+.choice {color:#ff0000; font-weight:600;float:left;
+    height: 13px; 
+font-size:0.85em;
+}
+
+#nextb {margin: auto auto; margin-top:40px; margin-bottom:100px; clear:both; width:300px; height:45px;  border:1px solid ;background-color :#11a35d; color:white}
+.join_button { margin:auto auto; clear:both; text-align:center; background-color:white;}
+#pre {width:100px; height:30px; margin:0 auto;}
+#next {width:100px; height:30px; margin:0 auto;}
+.modify_tit {background-color:white;}

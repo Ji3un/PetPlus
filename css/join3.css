@@ -1,0 +1,59 @@
+﻿/*header,footer*/
+
+.header {width:800px; height:167px; 
+margin:0 auto;background:white; }
+.logo {width:308px; height:80px; margin:0 auto; padding:40px 0; background:white; background:url('../Images/mainlogo2.png') no-repeat center;  }
+.logo a {text-decoration:none; color:white;}
+.nt_line {width:800PX; border: 1px solid #ececec;}
+.footer { width:800px; height:180px; margin:0 auto; font-size:0.813em; background-color:white;}
+.f_notice {width:800px; height:20px; margin:0 auto; padding-top:8px;}
+.f_title {font-weight:bold; margin-left:5px;}
+.footer a:hover {color:#808080; text-decoration:solid;}
+.view_all {float:right;  font-weight:bold; font-size:0.813em; margin-right:5px;}
+.f_advert {width:800px; height:50px;}
+.footer_txt {width:789px;height:90px; font-size:0.813em; color:#5c5c5c; margin-left:10px;background-color:white;}
+.footer_txt ul {list-style-type:none; width:378px;float:left;  margin-top:31px;}
+.footer_txt ul li {float:left;}
+.footer_txt ul li a {width:88px;height:22px;text-align:center; display:block;}
+.footer_txt img {width:169px; float:left; margin-top:31px; background-color:white;}
+.f_txt {float:left; width:606px;margin-top:10px; margin-left:10px;background-color:white;}
+.f_hr {width: 800px; border: 1px solid #ececec; }
+
+/*상단css*/
+* {padding:0; background-color:#ececec;margin-left: 0;margin-right: 0;margin-bottom: 0px;}
+a {text-decoration:none; color:black;background:white;}
+ul {background:white;}
+.wrap {width:800px;height:100%; margin:0 auto; padding:0; background-color:white;}
+.article {background-color:white; }
+.j_hr {width:720PX; border: 1px solid #ececec; margin:auto;}
+.tabmenu_1 {width:996px; margin:0 auto; background-color:white ;}
+.tabmenu_2 {width:996px; margin:0 auto; background-color:white; }
+.tabmenu_3 {width:996px; margin:0 auto; background-color:white;border-top:solid 2px #116a28; font-weight:600; color:#116a28}
+.tab {float:right; margin-top:20px;margin-right:40px;width: 259px; background-color:white;}
+.title {margin-left:40px; margin-bottom:20px;background-color:white; }
+.tit_join {background-color:white;}
+.tit_txt {font-size:0.750em;background-color:white;}
+.txt_desc {background-color:white;}
+.nt_line {width:800PX; border: 1px solid #ececec;}
+.joinend_content {text-align:center; margin-top:20px; clear:both; width:660px; 
+margin:auto auto; text-align:left;background-color:white;
+}
+.join_end {background-color:white; margin-top:60px; margin-bottom:60px;}
+.joinend_table {background-color:white; background-color:white;}
+.joinend_table tr {background-color:white;}
+.joinendname {background-color:white; padding-bottom:30px;}
+.joinendid {background-color:white;}
+#namelabel{ background-color:white;}
+#idlabel{ background-color:white;}
+#nextb {margin: auto auto; margin-top:40px; margin-bottom:100px; clear:both; width:300px; height:45px;background-color :#11a35d; color:white; border:1px solid #11a35d}
+.join_button { margin:auto auto; clear:both; text-align:center; background-color:white;}
+#Hname {background-color:white;}
+#Hid {background-color:white;}
+.namelabel {background-color:white;}
+.idlabel {background-color:white;}
+/*가입완료css*/
+.article {width:800px; margin:0 auto;}
+.welcome {background-color:white; margin-top:50px;
+    text-align: center;
+}
+.welcome2 {font-size:xx-large; font-weight:700; color:#116a28;background-color:white;}

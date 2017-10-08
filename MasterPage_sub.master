@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_sub.master.cs" Inherits="MasterPage_main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <!--css-->
+    <link href="css/sub.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/Event.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Weekly.css"/>
+    <script type="text/javascript" src="js/tab_menu.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE9"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+    <link href="css/layout.css" type="text/css" rel="stylesheet" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <!--jQuery 라이브러리 추가-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!--메인광고슬라이더 script추가-->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script type='text/javascript' src="js/common.js" charset="utf-8"></script>
+    <script type='text/javascript' src="js/fixed_header.js" charset="utf-8"></script>
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--전체를 감싸는 div-->
+        <div class="wrap">
+            <div class="header_wrap">
+                <div class="Counter">
+                    Total
+        <asp:Label ID="Label12" runat="server" style="font-weight: 700"></asp:Label>&nbsp;현재접속수
+        <asp:Label ID="Label22" runat="server" style="font-weight: 700"></asp:Label>
+    
+                </div>
+            <!--header 시작-->       
+            <div class="header">
+                <!--top_menu 시작-->
+                <div id="logout" runat="server">
+                    <ul>
+                        <li><a href="/login.aspx">로그인 &nbsp;|</a> </li>
+                        <li><a href="/join1.aspx">회원가입&nbsp; |</a> </li>
+                        <li><a href="/petsitemap.aspx">SiteMap</a></li>
+                    </ul>
+                </div>
+                <div id="login" runat="server">
+                    <ul>
+                        <li><asp:Label ID="LoginID" runat="server"></asp:Label></li>
+                        <li><a id="out" runat="server" onserverclick="out_ServerClick">로그아웃 &nbsp;|</a> </li>
+                        <li><a href="MemberOnly/Mypage.aspx">myPage&nbsp; |</a> </li>
+                        <li><a href="/petsitemap.aspx">SiteMap</a></li>
+                    </ul>
+                </div>
+                <!--top_menu 끝-->
+                <div class="logo">
+                    <a href="/Home.aspx"><img src="/Images/mainlogo.png" /></a>
+                </div>
+                <div class="search">
+                    <input id="stxt" runat="server" type="text" />
+                    <button id="sbtn" runat="server" onserverclick="sbtn_ServerClick" />
+                </div>
+            </div>
+            <!--header 끝-->
+            <!--sliding header-->
+            <!--header-->	            
+            <!--nav 시작-->
+            <hr class="nt_line" />
+            <div class="nav">
+                <ul>
+                    <li><a href="/H_Search.aspx">병원찾기</a></li>
+                    <li><a href="/Weekly.aspx">주간펫+</a></li>
+                    <li><a href="/Event.aspx">핫딜</a></li>
+                    <li><a href="/Community.aspx">커뮤니티</a></li>
+                </ul>
+            </div>
+            <hr class="nf_line" />
+            <!--nav 끝-->
+            </div>
+            <!--header_wrap-->
+            <div id="fixed_header_wrap">
+                <div id="fixed_header">
+		            <span class="brand"><a href="/Home.aspx"><img src="Images/mainlogo.png" /></a></span>
+			        <div class="nav2">
+                             <ul>
+                                <li><a href="/H_Search.aspx">병원찾기</a></li>
+                                <li><a href="/Weekly.aspx">주간펫+</a></li>
+                                <li><a href="/Event.aspx">핫딜</a></li>
+                                <li><a href="/Community.aspx">커뮤니티</a></li>
+                            </ul>
+                        </div>
+                    <div id="s_logout" runat="server">
+                            <ul>
+                                <li><a href="/login.aspx">로그인 &nbsp;|</a> </li>
+                                <li><a href="/join1.aspx">회원가입&nbsp; |</a> </li>
+                            </ul>
+                        </div>
+                    <div id="s_login" runat="server">
+                            <ul>
+                                <li><asp:Label ID="f_LoginID" runat="server"></asp:Label></li>
+                                <li><a id="f_out" runat="server" onserverclick="f_out_ServerClick">로그아웃 &nbsp;|</a> </li>
+                                <li><a href="/MemberOnly/Mypage.aspx">myPage&nbsp; |</a> </li>
+                            </ul>
+                        </div>                      		            
+	            </div>
+            </div>
+            <!--article 시작-->
+            <div class="article">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    기본 콘텐츠
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--article 끝-->
+            <!--footer_wrap 시작-->
+            <div class="footer_wrap">
+            <!--footer 시작-->
+            <div class="footer">
+                <div class="f_notice">
+                    <span class="f_title">공지사항</span>
+                    &nbsp;&nbsp;
+                    <span><a href="#">커뮤니티 게시물 신고 안내문</a></span>
+                    <span class="view_all"><a href="#">전체보기 ></a></span>
+                </div>
+                
+                <div class="footer_txt">
+                    <img  src="/Images/footerlogo.png" />
+                    <ul>
+                        <li><a href="/petinfo.aspx">웹소개 |</a></li>
+                        <li><a href="#">공지사항 |</a></li>
+                        <li><a href="#">이용약관 |</a></li>
+                        <li><a href="#">고객센터 </a></li>
+                    </ul>
+                    <p class="f_txt">
+                        서울특별시 종로구 필운대로 1길 34  ㈜ 펫플러스(Pet_Plus) COPYRIGHT ⓒ 2017  PETAH ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+            <!--footer 끝-->
+            </div>
+            <!--footer_wrap 끝-->
+        </div> 
+    </form>
+</body>
+</html>

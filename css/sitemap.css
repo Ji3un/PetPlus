@@ -1,0 +1,20 @@
+﻿*{margin:0; padding:0;}
+body {background-color:white;}
+.sitemap_container{ width:760px; min-height:400px; margin:0 auto; margin-top:80px;}
+.sitemap_content{float:left; width:760px; margin-top:30px; font-size:10pt;}
+.title {margin:10px;}
+
+#sitemap_sm1 { float: left; width:200px;}
+#sitemap_sm2 { float: left; width:200px;}
+#sitemap_sm3 { float: left; width:200px;}
+#sitemap_sm4 { float: left; width:160px;
+}
+
+.smt1{ margin-bottom:17px;}
+.smt2{ margin-bottom:17px;}
+.smt3{ margin-bottom:17px;}
+.smt4{ margin-bottom:17px;}
+
+.smt {font-weight:bold; margin:13px 20px;}
+.smt3_4 {font-weight:bold; margin:10px 20px;}
+.smt3_4_1 {margin-left:30px; margin-bottom:5px; font-size:10pt;}

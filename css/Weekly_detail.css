@@ -1,0 +1,30 @@
+﻿* {margin:0; padding:0;}
+.weeklyp_wrap {width:996px; min-height:900px; margin:0 auto; clear:both; margin-top:30px; margin-bottom:30px;}
+#weeklytxt_form {clear:both;  border-style:none; margin:0 auto; }
+#wphoto_datalist {clear:both; width:996px; border-style:none; margin:0 auto; margin-bottom:60px;}
+.masterbtn {float:right;}
+.w_category {float:left; margin-bottom:40px;}
+.w_category p {float:left;}
+.wtit_table {width:996px; height:80px; margin:auto auto;border-style:none;}
+.wtit_tr {border-style:none;height:40px;}
+.wtit_td {border-style:none; float:left; height:40px;}
+.user_td {width:70px;}
+, user_td p {float:left;}
+.hittxt_td {width:35px;}
+.hit_td {width:15px;}
+.wdate_td {width:700px}
+#wtitleID { font-size:4em; font-weight:600;}
+#userlabel {color:#808080;font-size:0.8em;}
+#wdatelabel {color:#808080;font-size:0.8em;}
+#hitlabel {color:#ff6a00;}
+.week_hr {width:996px; margin-bottom:30px;}
+.wlist {float:left;}
+.wlink {float:right;}
+
+
+
+
+.rec_btndiv {margin:auto auto;
+    text-align: center;
+}
+#rec_btn {margin:0 auto;}

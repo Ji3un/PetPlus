@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+.table1{float:left;
+    width: 379px;
+    height: 265px;
+    border-collapse:collapse;
+    margin-left:30px;
+}
+.menu_bar{ background-color:#ffffff ;
+           border-right:solid 1px #a1a1a1;
+width:260px; 
+height:200px; 
+    float:left;
+}
+
+table{ border-collapse:collapse;
+       border:none;
+
+}
+table,td,th{border :0 ;
+}
+textbox{height:10px}

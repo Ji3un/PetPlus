@@ -1,0 +1,91 @@
+﻿.Tshow_wap {width:996px; min-height:900px; text-align: center;background-color:white; margin-top:20PX;
+    margin:0 auto;
+}
+#Tshow_form {clear:both;  border-style:none; margin:0 auto; margin-left:-5px;}
+.Tformview { margin-left:40px;}
+.Tshow_table {width:800px; height:80px; margin:auto auto;border-style:none;}
+.Tshow_tr {border-style:none;height:40px;}
+.Tshow_td {border-style:none; float:left; height:40px;}
+.Tshow_date {border-style:none; float:left; text-align:left; width:600px; height:40px;}
+.Tshow_hit {border-style:none; float:left; width:40px;}
+.Tshow_id {border-style:none; width:100px;float:left; height:40px;}
+.hit_txt {float:left;height: 21px;}
+#titleLabel {text-align:left; font-size:2em; font-weight:600;}
+.Tshow_tt {float:right; margin-right:40px; margin-top:20px; font-size:0.85em;}
+.Tshow_ttr {
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 0.85em;
+}
+.userbtn {
+    float: right;
+}
+.allbtn {float:left;}
+.Talk_menu {float:left; }
+.Talk_btn {float:left; width:850px; margin-top:70px; margin-left:20px;}
+.Talk_btn2 {float:right; margin-right:90px; margin-bottom:50px; margin-top:50px;}
+.Talk_line {width:900px; margin:auto; margin-top:20px;}
+#tlist_bun {width:40px; height:30px;}
+#tedit_btn {width:40px; height:30px;}
+#tdelete_btn {width:40px; height:30px; margin-left:20px;}
+.hitLabel {float:left;}
+.wDateLabel {float:left;}
+#wDateLabel {font-size:0.8em; color:#808080}
+
+
+ .auto-style1 {
+             border-style: none;
+             float: left;
+             height: 38px;
+             font-weight:600;
+             font-size:x-large;
+         }
+         .auto-style2 {
+             border-style: none;
+             float: left;
+             text-align: left;
+             width: 600px;
+             height: 38px;
+         }
+         .auto-style3 {
+             border-style: none;
+             float: left;
+             width: 40px;
+             height: 38px;
+         }
+         .auto-style4 {
+             border-style: none;
+             width: 100px;
+             text-align:left;
+             float: left;
+             height: 15px;
+             font-size:0.8em; color:#808080
+         }
+         .auto-style5 {
+             border-style: none;
+             float: left;
+             text-align: left;
+             width: 600px;
+             height: 39px;
+         }
+         .auto-style6 {
+             border-style: none;
+             float: left;
+             width: 40px;
+             height: 59px;
+         }
+         .auto-style7 {
+             border-style: none;
+             float: left;
+             text-align: left;
+             width: 600px;
+             height: 15px;
+             font-size:0.8em; color:#808080
+         }
+         .auto-style8 {
+             border-style: none;
+             float: left;
+             width: 40px;
+             height: 15px;
+         }
