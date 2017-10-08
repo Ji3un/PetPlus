@@ -1,0 +1,6 @@
+﻿@charset "utf-8";
+* {margin:0; padding:0;}
+
+.list_logo{width:200px; height:70px; padding-top:100px; padding-left:80px}
+.list_content{width:371px; padding-left:100px}
+.pet_list{width:400px; height:300px; float:right; padding-top:170px; padding-right:100px;}

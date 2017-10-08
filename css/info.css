@@ -1,0 +1,13 @@
+﻿*{margin:0px 0 0 0; 
+padding:0;
+}
+.petinfo {width:996px; min-height:800px; margin:0 auto; background-color:white;}
+.info_meun{width:200px; height:50px; margin-bottom:70px;  margin:auto auto;}
+.info_b1{ float:left; width:200px; height:50px; margin:0 auto;}
+.info_b2{ float:left; width:200px; height:50px;}
+.info_content{width:700px;  margin:0 auto;}
+.info_img1{width:700px; height:500px; margin:0 auto;}
+.info_img2{width:700px; height:500px; margin:0 auto;}
+#ImageButton1 {margin:auto auto;}
+
+

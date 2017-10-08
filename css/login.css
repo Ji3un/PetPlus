@@ -1,0 +1,43 @@
+﻿@charset "utf-8";
+
+/*로그인페이지*/
+* {margin:0 0 0px 0; padding:0; background-color:#ececec;}
+a {text-decoration:none; color:black;background:white;}
+ul {background:white;}
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+.wrap {width:720px; height:100%; margin:0 auto; padding:0; position:relative;}
+.header {width:720px; height:150px; margin:0 auto;background:white; }
+.logo {width:308px; height:80px; margin:0 auto; padding:40px 0; background:white; background:url('../Images/mainlogo2.png') no-repeat center;  }
+.logo a {text-decoration:none; color:white;}
+.nt_line {width:720PX; border: 1px solid #ececec;}
+.nf_line {border:1px solid #11a35d; width:310px;}
+.article {width:720px; height:400px; margin:0 auto; background:white; }
+.Login {width:300px; height:250px; float:left; margin:80px 60px 0 40px;background:white; }
+.ad {width:277px; height:241px; float:left; margin-top:80px; }
+#idkeep {margin-left:80px;}
+#UserID {width:300px; height:45px; float:left; border:solid 1px; border-color:#b4b4b4; font-size:0.8em; background:white;}
+#Password {width:300px; height:45px;float:left;  border:solid 1px; border-color:#11a35d;margin-top:15px; font-size:0.8em; background:white;}
+#lbtn {width:300px; height:60px; float:left; border:none; background-color:#11a35d; margin-top:20px; color:white; font-size:medium}
+.lcheck {width:310px; height:15px; font-size:0.83em; float:left; margin-top:15PX;margin-bottom:15PX;  text-align:center;  background:white;}
+.Login_txt {width:310px;height:25px; font-size:0.83em; font-weight:600; float:left; text-align:center;  padding-top:10px; background-color:white
+}
+.Login_txt ul {list-style-type:none; width:310px;float:left; background:white;} 
+.Login_txt ul li {float:left;height: 117px;width: 310px; background:white;}
+.Login ul li a {width:310px; height:13px; display:block; }
+.Login_txt_join {color:#0b7643}
+.Lad img {width: 310px; height:250px;}
+.footer { width:720px; height:90px; margin:auto auto; font-size:0.813em; background-color:white;}
+.f_notice {width:720px; height:20px; margin:0 auto; padding-top:8px;}
+.f_title {font-weight:bold; margin-left:5px;}
+.footer a:hover {color:#808080; text-decoration:solid;}
+.view_all {float:right;  font-weight:bold; font-size:0.813em; margin-right:5px;}
+.f_advert {width:720px; height:50px;}
+.footer_txt {width:612px;height:90px; font-size:0.813em; color:#5c5c5c; margin-left:50px;background-color:white;}
+.footer_txt ul {list-style-type:none; width:400px; float:left;  margin-top:31px;}
+.footer_txt ul li {float:left;}
+.footer_txt ul li a {width:60px; height:13px; text-align:center; display:block;}
+.footer_txt img {width:159px; float:left; margin-top:31px; background-color:white;}
+.f_txt {float:left; width:417px; margin-top:10px; margin-left:10px;background-color:white;}

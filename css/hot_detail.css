@@ -1,0 +1,61 @@
+﻿@charset "utf-8";
+* {margin:0; padding:0;}
+
+.detail_wrap{width:996px; min-height:500px; margin:0 auto; clear:both;}
+.e_detail_wrap{width:996px; height:500px; margin-top:50px; margin:0 auto; clear:both; border:solid 1px; border-color:#d7d7d7;}
+.detail_box{width:460px; height:500px; float:left;}
+.e_detail{width:496px; height:500px; float:left; }
+.c_title{width:450px;margin-left:40px; margin-right:40px; margin-top:70px; margin-bottom:30px; }
+.coupon_lbl{width:450px;margin-left:40px; margin-right:20px; margin-top:20px; margin-bottom:10px;background-image:url('/Coupon/r_coupon.png'); background-repeat:no-repeat;}
+.coupon_view{width:450px;margin-left:51px; margin-right:40px; margin-top:40px; margin-bottom:20px;}
+.c_count{width:165px; float:left;}
+.c_date{width:180px; float:left; margin-left:90px}
+.coupon_line{width:450px; margin-left:40px; margin-right:40px; margin-top:10px;
+    height: 1px;
+}
+.c_line{
+    border:1px solid #11a35d; border-right : 0; border-left: 0;
+}
+.c_btn{width:450px;
+margin-left:40px; margin-right:40px; margin-top:40px; margin-bottom:20px;
+}
+
+#cName {height:25px;padding-top:5px; padding-left:20px; padding-bottom:30px;
+}
+
+/* 쿠폰 메인 위에 메뉴 경로 부분 */
+.menu_url{width:400px; height:30px; float:left;padding-top:30px; padding-bottom:10px;padding-left:50px;}
+
+/* 쿠폰 메인 이미지 위치 설정 */
+.main_img{width:400px; margin:0 auto; padding-left:30px;}
+
+/* 조회수 영역 */
+.hit_lbl{width:450px;margin-left:40px; margin-right:40px; margin-top:40px; margin-bottom:10px;
+    height: 24px;
+}
+
+/*하트 박스 영역 */
+#heart{width:25px;height:29px; margin:0 auto;}
+
+.detail_btn2{
+    width:200px; height:60px; float:left;
+}
+                     
+/* 좋아요 버튼 (카운팅) */
+#rec_btn {width : 35px; height:60px; float:left;margin-right:330px; 
+}
+
+/* 몇명이 보았는지 확인하는 레이블 영역 */
+#watching {width:170px; float:left; padding-left:10px; 
+}
+
+/* 업로드 날짜 영역 */
+.upload_date {width:180px; float:left;
+    height: 17px;padding-left:90px;
+}             
+
+/* 좋아요 레이블 영역 */
+#rec_lbl {width:35px; height:29px; margin:0 auto; clear:both; }      
+
+/* 상세설명 영역 레이블 영역 */
+#c_content{height:30px;padding-top:5px; padding-left:20px; padding-top:30px;}                

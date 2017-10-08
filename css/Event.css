@@ -1,0 +1,79 @@
+﻿@charset "utf-8";
+* {margin:0; padding:0;}
+
+
+.article_wrap {width:996px; min-height:1300px; margin:0 auto; clear:both;}
+/*핫딜페이지*/
+/*event - 이벤트 광고영역*/
+.e_article{width:996px; min-height:300px; margin:0 auto; z-index:1;}
+.event {width: 996px; height: 300px; background-color: #444444; z-index:1000;}
+#e_banner_wrap { width: 996px; height: 300px; position: relative; margin: 0 auto;}
+.event_01 {width: 996px; height: 300px; background-image :url(/Images/adv_1.png)}
+.event_02 {width: 996px; height: 300px; background-image:url(/Images/adv_2.png)}
+.event_03 { width: 996px; height: 300px; background-image:url(/Images/adv_3.png)}
+
+/* tabmenu - 탭 메뉴 영역 */
+.tabmenu_wrap {width:996px; height:1300px; margin:0 auto; background-color:white;}
+.tabmenu{width:900px; height:48px; margin-top:16px; font-size:0.813em; font-weight:bold;}
+.menu1 { border:1px solid #ccc; background-color:#ffffff;}
+.menu1 { list-style-type:none; width:996px;height:48px;}
+.menu1  li{float:left; width: 90px; height:35px; text-align:center; display:block; padding-top:8px; padding-left:5px;}
+.menu1 li:first-child {width:90px; height:40px; background-color:#1eac4f; color:#ffffff;}
+
+/* order_menu - tabmenu 우측 컨텐츠 순서 영역, 순서대로 컨텐츠 볼 수 있는 메뉴 영역*/
+.sort_menu {float:right; width:200px; height:48px; margin-top:16px; font-size:0.813em; font-weight:bold; }
+.sort_menu { border:1px solid #ccc;}
+.sort_menu{ list-style-type:none; width:996px;height:48px;}
+.sort_menu li{float:left; width: 80px; height:35px; text-align:center; display:block; padding-top:15px; padding-left:5px;}
+
+
+/* tab_content - 탭 클릭 시 나타나는 핫딜 컨텐츠 전체 영역 */
+.tab_content{width:996px; height:100%; font-size:0.813em; margin-top:8px; background-color:#fff;}
+
+/* tab_ - 클릭 시 나오는 탭 화면 */
+#tab_0 {float:left; }
+#tab_1 {float:left;}
+#tab_2 {float:left;}
+#tab_3 {float:left;}
+#tab_4 {float:left;}
+
+/* box - 핫딜 컨텐츠가 들어가는 개별 영역 (전체,진료비,미용,용품,호텔) */
+.box_1{width:320px; height : 421px; border : 1px solid #ccc; float:left; background-color:white;}
+.box_2{width:320px; height : 421px; border : 1px solid #ccc; margin-left:15px; float:left; background-color:white;}
+.box_3{width:320px; height : 421px; border : 1px solid #ccc; margin-left:15px; float:left; background-color:white;}
+.box_4{width:320px; height : 421px; border : 1px solid #ccc; float:left; margin-top:16px; margin-bottom:101px; background-color:white;}
+.box_5{width:320px; height : 421px; border : 1px solid #ccc; margin-left:15px; margin-top:16px; margin-bottom:101px; float:left; background-color:white;}
+.box_6{width:320px; height : 421px; border : 1px solid #ccc; margin-left:15px; margin-top:16px; margin-bottom:101px; float:left; background-color:white;}
+
+/* goods_title - 상품 컨텐츠 제목의 텍스트 영역 */
+.goods_title{width:270px; height:50px;}
+/* mini_title - 상품 작은 사이즈 설명 영역 */
+.mini_title{padding:10px 20px 5px 10px; font-size:0.920em; color:#808080; font-weight:bold;}
+/* maxi_title - 상품 큰 사이즈 설명 영역*/
+.maxi_title{padding:0 20px 0 10px; font-size:1.000em; font-weight:bold;}
+
+/* coupon_info - 쿠폰 설명 영역*/
+.coupon_info{width:90px; height:20px; float:right;  padding:10px 160px 0 0;}
+/* coupon_name- 쿠폰명 텍스트 영역*/
+.coupon_name {width:80px; height:20px;}
+.coupon_name {font-size:1.000em; font-weight:bold;}
+
+
+/* heart - '좋아요' 하트 이미지 영역 */
+.heart{float:right; padding:10px 20px 0 0;}
+
+/* DataList에 메인이미지 영역 */
+#main_image{width:310px; height:310px; /*margin-top:15px;*/
+}
+/* 쿠폰 영역 여백 */
+#coupon{height:32px;
+    margin-top:25px;
+    margin-left:10px;
+    margin-bottom:10px;
+    background-image:url('/Coupon/r_coupon.png');
+    background-repeat:no-repeat;
+}
+#cName{padding-top:5px; padding-left:20px;}
+
+/*핫딜 한 컨텐츠를 감싸는 박스 영역 */
+.main_wrap{border:solid 1px #ccc;}

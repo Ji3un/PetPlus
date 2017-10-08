@@ -1,0 +1,74 @@
+﻿@charset "utf-8";
+* {margin:0; padding:0;}
+.mpage_wrap{width:996px; height:700px; margin-top:10px;
+            margin-left:auto; margin-right:auto; clear:both;}
+
+.articl_wrap{width:742px; height:700px; background-color:#ffffff;
+           border:solid 1px #e1e1e1; float:left;}
+
+/* 마이페이지 좌측 메뉴바 영역 */
+.mymenu{width: 250px; height:700px; position: relative; background-color:#ffffff;
+        border:solid 1px #e1e1e1; float:left;
+}
+
+/* 컨텐츠 영역 */
+.m_content{width:742px; height:700px; position:relative; background-color:#ffffff;
+        float:right; 
+}
+
+/* 콘텐츠 - 타이틀 영역 */
+.c_tit{width:722px;height:40px;font-weight:bold; padding-left:20px; padding-top:20px; padding-bottom:35px;
+       line-height:190%;
+}
+
+.con_line{width:700px; border:1px solid #11a35d; border-right : 0; border-left: 0; margin:0 auto;}
+
+/* 마이페이지 타이틀 영역*/
+#menu_tit{width:230px;height:30px; background-color:#1eac4f;
+          font-weight:bold; color:#ffffff;
+          padding-left:20px; padding-top:10px;
+}
+
+.m_tit{width:230px;height:30px;
+          font-weight:bold;
+          padding-left:20px; padding-top:20px; padding-bottom:10px;}
+
+.m_tit2{width:230px;height:30px;
+        font-weight:bold; padding-left:20px; padding-top:20px; padding-bottom:10px;}
+
+/* 유저이름 불러오는 라벨 영역 */
+#user_name{width:230px;height:60px; font-weight:bold; font-size:12pt;
+         padding-left:20px;padding-top:10px;
+}
+#welcome {
+    font-weight: bold;
+    font-size: 11pt;
+    padding-top:10px;
+}
+
+/* 마이페이지 버튼 영역 */
+#my_btn2{width:230px;height:30px;font-weight:bold; font-size:11pt; padding-left:20px; padding-top:10px;padding-bottom:5px; }
+#my_btn2 ul{list-style-type:none; width:230px; float:right;
+    color: #999999;
+}
+#my_btn2 ul li {float:left;}
+
+/* 중간 라인 */
+.my_line{width:250px; border:1px solid #e1e1e1; border-right : 0; border-left: 0; margin:0 auto;
+}
+
+/* 마이페이지 하위메뉴 영역 */
+.m_menu1{width:230px; height:65px;font-weight:bold; font-size:11pt;
+        line-height:180%; padding-left:20px;}
+.m_menu2{width:230px; height:95px; font-weight:bold; font-size:11pt;
+         line-height:180%; padding-left:20px;
+}
+
+/* 콘텐츠 이미지 영역 */
+.my_img{width:462px;height:355px; padding-left:20px; padding-top:20px;}
+/* 펫 캘린더 영역 */
+.cal_box{width: 720px; 
+height: 700px; padding-left:10px; margin-top:20px;
+}
+
+#new_schedule{width:350px; height:90px; padding-top:20px;}
