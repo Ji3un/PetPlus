@@ -28,3 +28,8 @@
 textarea:focus, input:focus{
     outline: none;
 }
+.tab_btn{
+    border:none;
+    background-color:none;
+    font-weight:bold;
+}

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_sub.master" AutoEventWireup="true" CodeFile="hot_detail.aspx.cs" Inherits="Event_detail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="css/hot_dtail.css" type="text/css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="detail_wrap">
@@ -114,7 +115,7 @@
 
                 </ItemTemplate>
             </asp:FormView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>" SelectCommand="SELECT * FROM [Hotdeal]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>" SelectCommand="select * from Hotdeal h join pfile p on h.seq = p.tseq where p.seq in (select min(seq) from pfile group by tseq) order by hit desc;"></asp:SqlDataSource>
 
             </div>
 
