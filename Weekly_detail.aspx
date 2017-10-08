@@ -48,7 +48,7 @@
 
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ 
             ConnectionStrings:myDBConnectionString1 %>" 
-            SelectCommand="select * from [Weekly] w left join [pfile] f on w.seq = f.tseq where (w.seq = @seq)">
+            SelectCommand="select * from [Weekly] w left join [pfile] f on w.seq = f.tseq where tname='W' AND (w.seq = @seq)">
             <SelectParameters>
                 <asp:QueryStringParameter Name="seq" QueryStringField="seq" Type="Int32" />
             </SelectParameters>
@@ -65,7 +65,7 @@
 
         </asp:DataList>
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:myDBConnectionString1 %>"
-             SelectCommand="select * from [Weekly] w left join [pfile] p on w.seq = p.tseq where (w.seq = @seq)">
+             SelectCommand="select * from [Weekly] w left join [pfile] p on w.seq = p.tseq where tname='W' AND (w.seq = @seq)">
             <SelectParameters>
                 <asp:QueryStringParameter Name="seq" QueryStringField="seq" Type="Int32" />
             </SelectParameters>
@@ -76,9 +76,9 @@
         <br /> 
 
         <div class="rec_btndiv">
-            <asp:ImageButton ID="rec_btn" runat="server" Height="65px" Width="60px" OnClick="rec_btn_Click" />
+            <asp:ImageButton ID="rec_btn" runat="server" Height="65px" Width="60px" OnClick="rec_btn_Click" ImageUrl="~/Images/heart.png" />
             <br />
-            <asp:Label ID="reclabel" runat="server" Text ='<%# Eval("rec") %>'></asp:Label>
+            <asp:Label ID="reclabel" runat="server" ></asp:Label>
         </div>
 
        
