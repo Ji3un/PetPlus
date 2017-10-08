@@ -64,9 +64,9 @@
             <hr class="nt_line" />
             <div class="nav">
                 <ul>
-                    <li><a href="/TalkList.aspx">자유게시판</a></li>
-                    <li><a href="/plist.aspx">실종신고</a></li>
-                    <li><a href="/MemberOnly/Livecha.aspx">온라인캠페인</a></li>
+                    <li><a href="/TalkList.aspx">톡톡</a></li>
+                    <li><a href="/plist.aspx">도와줘펫</a></li>
+                    <li><a href="/MemberOnly/Livecha.aspx">v펫히어로즈</a></li>
                 </ul>
                 <div class="search">
                     <input id="stxt" runat="server" type="text" />
@@ -83,8 +83,8 @@
 			        <div class="nav2">
                              <ul>
                                 <li><a href="/TalkList.aspx">톡톡</a></li>
-                                <li><a href="/plist.aspx">포토랭킹</a></li>
-                                <li><a href="/MemberOnly/Livecha.aspx">라이브채팅</a></li>
+                                <li><a href="/plist.aspx">도와줘펫</a></li>
+                                <li><a href="/MemberOnly/Livecha.aspx">펫히어로즈</a></li>
                             </ul>
                         </div>
                     <div id="s_logout" runat="server">
