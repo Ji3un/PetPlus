@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+* {margin:0; padding:0;}
+.w_wrap {width:1000px; min-height:1300px; margin:0 auto; clear:both;z-index:1;}
+.weekly_con {width:1000px; height:260px; margin:0 auto;overflow:hidden;z-index:2; }
+.marquee {width:100%; height:45px; margin:0 auto; margin-top:15px; margin-bottom:15px; background-image:url(../Images/weeklypet_r.png); z-index:11; overflow: hidden; }
+.marquee a {color:#ffffff; margin:0 auto;}
+.weekly_menu {
+    width: 1000px;
+    height: 185px;
+    margin: 0 auto;
+    background-image: url(../Images/weeklypet_menubg.png);
+    z-index: 11;
+    padding: 60px;
+}
+.weeklybtn {float:left; margin-right:40px; }
+.wconmain1 {float:left;}
+.wcon1 {float:left;}
+.weekmain1 {width:485px; height:272px; border:1px #808080; background-color:#ffffff; float:left; margin-right:13px;margin-top:13px; overflow:hidden;}
+.weekly_content {width:996px; margin-left:5px; margin-top:5px;}
+.week1 {width:236px; height:272px; border:1px #808080; background-color:#ffffff;float:left; margin-right:13px;margin-top:13px;overflow:hidden;}
+    .week1 img {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+#scroller {color:#ffffff; text-align:center;}
+.week2 {width:236px; height:272px; border:1px #808080; background-color:#ffffff;float:left; margin-right:13px; margin-top:13px;}
+.week3 {width:236px; height:272px; border:1px #808080; background-color:#ffffff;float:left; margin-right:13px; margin-top:13px;}
+.week4 {width:236px; height:272px; border:1px #808080; background-color:#ffffff;float:left; margin-right:13px; margin-top:13px;}
+.week5 {width:236px; height:272px; border:1px #808080; background-color:#ffffff;float:left; margin-right:13px; margin-top:13px;}
+.week6 {width:236px; height:272px; border:1px #808080; background-color:#ffffff;float:left; margin-top:13px;}
+.week8 {width:485px; height:272px; border:1px #808080; background-color:#ffffff; float:left; margin-right:13px;margin-top:13px; overflow:hidden;}
+.week_title {background-color:black; height:40px; width:465px; text-align:left; color:white; padding:10px; margin-top:-65px; opacity:0.5; font-weight:bold;}
+#titleLabel {width: 200px;}
+.weekdiv {width:236px;height:272px;  background-color :#ffffff; }

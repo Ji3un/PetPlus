@@ -1,0 +1,24 @@
+﻿/*content*/
+.comu_wrap {width:996px; min-height:900px; text-align: center;background-color:white; margin-top:20PX;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1034px;
+}
+.whirt_txt {float:left; background-color:white;margin-top:20px; margin-left:90px;margin-bottom:20px; font-size:larger; font-weight:700; color:#ff6a00}
+#comu2_line {float:left; border:1px solid #ff6a00; margin-bottom:10px; margin-top:10px;}
+#pwrite_table {height:200px; clear:both; margin:auto auto;  background-color:white;  border-style:none;}
+.ptr {height:30px; width:30px; background-color:white; border-style:none;}
+.ptd { width:700px; height:30px; float:left; border-style:none;text-align:left;}
+.ptit {height:30px; width:100px; background-color :white; border-style:none;text-align:left;}
+.pwrite{float:left; width:123px; margin:auto auto; text-align:left;}
+#title { width:996px;}
+#imgupload {border:none;}
+#pwirte_textbox {clear:both; margin:auto auto; margin-bottom:40px; border:1px solid #ececec}
+#txt {width:800px; clear:both; margin:auto auto; text-align:center; font-size:smaller; margin-top:20px}
+.pwrite_btn {float:left; margin-left:90px; margin-bottom:50px; margin-top:50px;}
+.pwrite_btn2 {float:right; margin-right:40px;  margin-top:50px;}
+.pwrite_line {width:800px; margin:auto; margin-top:20px;}
+#plist_btn {  border:1px solid #808080; background-color:white; width:60px; height:25px;}
+#pnext_btm { background-color:#fc4b4b; color:white; border:1px solid #fc4b4b; margin-left:10px;  width:60px; height:25px;}
+#pcancel_btn { border:1px solid #808080; background-color:white; width:60px; height:25px;}
+#fileup {width:400px; height:30px;}
